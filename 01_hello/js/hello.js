@@ -3,6 +3,7 @@ document.title = "はじめてのJavaScript";
 
 // TODO: コンソールに「Hello!」を表示
 // clg
+console.log("テスト中")
 
 // ----------------------------------------
 // チャレンジ: console のいろいろな出力
