@@ -1,4 +1,5 @@
 // TODO: ウィンドウタイトルを「はじめてのJavaScript」に変更: document.title
+document.title = "はじめてのJavaScript";
 
 // TODO: コンソールに「Hello!」を表示
 // clg
