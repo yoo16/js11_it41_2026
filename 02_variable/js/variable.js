@@ -23,16 +23,16 @@ console.log(itemName)
 console.log(price, quantity, discount)
 
 // TODO: 商品名を表示: itemName を代入
-document.getElementById("item-name").textContent
+document.getElementById("item-name").textContent = itemName
 
 // TODO: 価格を表示: price を代入
-document.getElementById("price").textContent
+document.getElementById("price").textContent = price
 
 // TODO: 個数を表示: quantity を代入
-document.getElementById("quantity").textContent
+document.getElementById("quantity").textContent = quantity
 
 // TODO: 割引を表示: discount を代入
-document.getElementById("discount").textContent
+document.getElementById("discount").textContent = discount
 
 // TODO: 定数定義 税率「TAX_RATE」: const で定義
 
