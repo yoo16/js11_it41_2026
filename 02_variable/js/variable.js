@@ -4,10 +4,13 @@ var itemName = "コーヒー"
 console.log(itemName)
 
 // TODO: 変数定義 価格「price」: var または let で定義
+let price = 500
 
 // TODO: 変数定義 個数「quantity」: var または let で定義
+let quantity = 2
 
 // TODO: 変数定義 割引「discount」: var または let で定義
+let discount = 100
 
 // TODO: itemName に再代入
 
