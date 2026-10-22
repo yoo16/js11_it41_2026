@@ -35,6 +35,7 @@ document.getElementById("quantity").textContent = quantity
 document.getElementById("discount").textContent = discount
 
 // TODO: 定数定義 税率「TAX_RATE」: const で定義
+const TAX_RATE = 0.1
 
 // TODO: 税率を表示: TAX_RATE
-document.getElementById("tax-rate").textContent
+document.getElementById("tax-rate").textContent = TAX_RATE
