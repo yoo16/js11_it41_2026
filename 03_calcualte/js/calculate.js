@@ -17,12 +17,15 @@ let discount = 0;
 // TODO: 個数 quantity を増減: ++
 
 // TODO: 小計金額計算: subTotalPrice
+subTotalPrice = price * quantity
 
 // TODO: 三項演算子を使って割引額を設定: discount
 
 // TODO: 合計金額 = 小計金額 - 割引: totalPrice
+totalPrice = subTotalPrice - discount
 
 // TODO: 税抜き金額 = 合計金額 / (1 + 税率): taxWithoutPrice
+taxWithoutPrice = totalPrice / (1 + TAX_RATE)
 
 // TODO: 税抜き金額を四捨五入: toFixed()
 
