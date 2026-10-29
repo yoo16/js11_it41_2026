@@ -15,6 +15,10 @@ let isMember = true
 let discount = 0;
 
 // TODO: 個数 quantity を増減: ++
+// quantity = quantity + 1 と同じ意味
+quantity++
+// quantity = quantity - 1 と同じ意味
+quantity--
 
 // TODO: 小計金額計算: subTotalPrice
 subTotalPrice = price * quantity
