@@ -50,10 +50,10 @@ var orderCode;
 // 数値の計算（Number同士の足し算）
 orderCode = tableNo + orderNo
 // 数値 + 文字 + 数値
-orderCode = tableNo + "-" + orderNo
+orderCode = "R" + tableNo + "-" + orderNo + "E"
 
 // TODO: オーダーコード生成（テキスト連結） xx-xxxx 形式: バッククォートで囲む
-// orderCode = `${tableNo}-${orderNo}`;
+orderCode = `R${tableNo}-${orderNo}E`;
 
 // HTML表示
 document.getElementById('item-name').textContent = itemName;
