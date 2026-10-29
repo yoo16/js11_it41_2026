@@ -19,6 +19,8 @@ let discount = 0;
 quantity++
 // quantity = quantity - 1 と同じ意味
 quantity--
+// quantity = quantity + 3 と同じ意味
+quantity += 3
 
 // TODO: 小計金額計算: subTotalPrice
 subTotalPrice = price * quantity
