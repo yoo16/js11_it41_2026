@@ -46,7 +46,8 @@ let seconds = 0;
 //       第1引数: 実行する関数、第2引数: 間隔（ミリ秒）
 
 setInterval(() => {
-
+    seconds++
+    document.getElementById("count").textContent = seconds
 }, 1000);
 
 // ==============================
