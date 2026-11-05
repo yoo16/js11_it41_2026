@@ -8,12 +8,12 @@
 let numberString = "0005";
 
 // TODO: 文字列を数値に変換: parseInt()
-let number;
+let number = parseInt(numberString)
 
 // TODO: 数値でないか調べる: isNaN()
-let nan1;    // "コーヒー"（文字列）
-let nan2;    // "0005"（数値に変換可能な文字列）
-let nan3;    // 5（数値）
+let nan1 = isNaN("コーヒー")    // "コーヒー"（文字列）
+let nan2 = isNaN("0005")     // "0005"（数値に変換可能な文字列）
+let nan3 = isNaN(5)     // 5（数値）
 
 // Math
 let height = 169.5;
