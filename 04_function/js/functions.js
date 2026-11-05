@@ -24,9 +24,9 @@ let ceiled = Math.ceil(height)
 // TODO: 切り捨て: Math.floor()
 let floored = Math.floor(height)
 // TODO: 最大値 1, 5, 10, 3: Math.max()
-let maxValue;
+let maxValue = Math.max(1, 5, 10, 3)
 // TODO: 最小値 1, 5, 10, 3: Math.min()
-let minValue;
+let minValue = Math.min(1, 5, 10, 3)
 
 // HTML表示
 document.getElementById("parseInt_input").textContent = numberString;
