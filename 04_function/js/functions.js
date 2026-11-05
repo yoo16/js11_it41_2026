@@ -61,8 +61,7 @@ document.getElementById("calc2").textContent = calculate(71);
 // 無名関数
 // ==============================
 // TODO: name + "さん、いらっしゃい" を返す無名関数を hello1 に代入: const hello1 = function (name) { };
-const hello1 = function(name) 
-{
+const hello1 = function (name) {
     return name + "さん、いらっしゃい"
 }
 
@@ -72,7 +71,9 @@ document.getElementById("hello1").textContent = hello1("東京 太郎");
 // アロー関数
 // ==============================
 // TODO: hello1 と同じ処理をアロー関数で hello2 に代入: const hello2 = (name) => { };
-const hello2 = null;
+const hello2 = (name) => {
+    return name + "さん、いらっしゃい"
+}
 // document.getElementById("hello2").textContent = hello2("東京 太郎");
 
 // ==============================
