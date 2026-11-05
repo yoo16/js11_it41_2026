@@ -45,6 +45,10 @@ let seconds = 0;
 // TODO: setInterval() で1秒ごとに seconds を +1 して、#count に「n秒」と表示する
 //       第1引数: 実行する関数、第2引数: 間隔（ミリ秒）
 
+setInterval(() => {
+
+}, 1000);
+
 // ==============================
 // ユーザ定義関数
 // ==============================
@@ -74,7 +78,8 @@ document.getElementById("hello1").textContent = hello1("東京 太郎");
 const hello2 = (name) => {
     return name + "さん、いらっしゃい"
 }
-// document.getElementById("hello2").textContent = hello2("東京 太郎");
+
+document.getElementById("hello2").textContent = hello2("東京 太郎");
 
 // ==============================
 // 実行のタイミング
