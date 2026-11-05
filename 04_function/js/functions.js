@@ -18,11 +18,11 @@ let nan3 = isNaN(5)     // 5（数値）
 // Math
 let height = 169.5;
 // TODO: 四捨五入: Math.round()
-let rounded;
+let rounded = Math.round(height)
 // TODO: 切り上げ: Math.ceil()
-let ceiled;
+let ceiled = Math.ceil(height)
 // TODO: 切り捨て: Math.floor()
-let floored;
+let floored = Math.floor(height)
 // TODO: 最大値 1, 5, 10, 3: Math.max()
 let maxValue;
 // TODO: 最小値 1, 5, 10, 3: Math.min()
