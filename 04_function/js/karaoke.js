@@ -177,6 +177,7 @@ function simulate() {
     let total = calcTotal(subtotal, isMember)
 
     // TODO: 計算結果を表示する: renderResult() を実行
+    renderResult(roomFee, drinkFee, subtotal, total, people, isMember);
 }
 
 /**
