@@ -63,7 +63,7 @@ function applyDiscount(price, rate = 0.1) {
  */
 function addTax(price) {
     // TODO: 税込金額 = price * (1 + TAX_RATE) を Math.floor() で切り捨てて return する
-    return 0;
+    return Math.floor(price * (1 + TAX_RATE));
 }
 
 /**
