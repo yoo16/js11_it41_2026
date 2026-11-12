@@ -76,7 +76,7 @@ function addTax(price) {
  */
 function calcSubtotal(roomFee, drinkFee) {
     // TODO: ルーム料金 + ドリンクバー料金 を return する
-    return 0;
+    return roomFee + drinkFee;
 }
 
 /**
@@ -89,10 +89,10 @@ function calcSubtotal(roomFee, drinkFee) {
  */
 function calcTotal(subtotal, isMember) {
     // TODO: 三項演算子で、会員なら applyDiscount() で割引、会員でなければ小計のまま: discounted
-    let discounted = 0;
+    let discounted = isMember ? applyDiscount(subtotal) : subtotal;
 
     // TODO: discounted を addTax() で税込にして return する
-    return 0;
+    return addTax(discounted)
 }
 
 /**
