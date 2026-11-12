@@ -147,7 +147,7 @@ function simulate() {
     let minutes = Number(document.getElementById("minutes").value);
     let useDrink = document.getElementById("drink").checked;
     let isMember = document.getElementById("member").checked;
-
+    // 合計の人数
     let people = adult + student + child;
     if (people === 0) {
         document.getElementById("result").textContent = "人数を入力してください";
@@ -189,11 +189,11 @@ function simulate() {
 function changeCount(id, step) {
     let input = document.getElementById(id);
     // TODO: 現在の人数 input.value を Number() で数値に変換: count
-    let count = 0;
+    let count = Number(input.value);
 
     // TODO: count に step を加えた値を input.value に設定する
     //       ただし 0 未満にならないよう Math.max() を使う
-    input.value = 0;
+    input.value = Math.max(0, count + step);
 }
 
 // 人数ボタン
