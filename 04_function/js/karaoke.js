@@ -104,7 +104,7 @@ function calcTotal(subtotal, isMember) {
  */
 function formatYen(price) {
     // TODO: toLocaleString() でカンマ区切りにして、末尾に "円" を付けて return する
-    return "";
+    return price.toLocaleString() + "円";
 }
 
 /**
