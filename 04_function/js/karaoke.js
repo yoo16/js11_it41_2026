@@ -165,16 +165,16 @@ function simulate() {
     let childFee = calcRoomFee(child, childPrice, minutes)
 
     // TODO: ルーム料金 = 大人 + 学生 + 子供: roomFee
-    let roomFee = 0;
+    let roomFee = adultFee + studentFee + childFee
 
     // TODO: ドリンクバー料金を三項演算子で設定（useDrink が true なら 人数 * DRINK_PRICE、false なら 0）: drinkFee
-    let drinkFee = 0;
+    let drinkFee = useDrink ? people * DRINK_PRICE : 0;
 
     // TODO: calcSubtotal() で小計を求める: subtotal
-    let subtotal = 0;
+    let subtotal = calcSubtotal(roomFee, drinkFee)
 
     // TODO: calcTotal() で税込合計を求める: total
-    let total = 0;
+    let total = calcTotal(subtotal, isMember)
 
     // TODO: 計算結果を表示する: renderResult() を実行
 }
