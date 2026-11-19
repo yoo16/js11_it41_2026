@@ -10,16 +10,16 @@ let result4 = null
 let message1 = ""
 
 // TODO: price が 500 と等しい
-result1 = false
+result1 = (price == 500)
 
 // TODO: price が 0 より小さい
-result2 = false
+result2 = (price < 0)
 
 // TODO: price が 500 より大きい
-result3 = false
+result3 = (price > 500)
 
 // TODO: price が 500 以上
-result4 = false
+result4 = (price >= 500)
 
 // TODO: If statement: money が price 以上 の時に "決済完了"
 
