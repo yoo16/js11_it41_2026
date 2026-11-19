@@ -49,6 +49,7 @@ let trash = ""
 // TODO:weekday に応じて switch 文でゴミの種類を設定: Switch Statement
 switch (weekday) {
     case 1:
+    case 5:
         trash = "燃えるゴミ";
         break;
 
