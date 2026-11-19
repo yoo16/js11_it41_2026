@@ -21,7 +21,10 @@ result3 = (price > 500)
 // TODO: price が 500 以上
 result4 = (price >= 500)
 
-// TODO: If statement: money が price 以上 の時に "決済完了"
+// TODO: If statement: money が price 以上 の時に "決済完了" を　message1　に代入
+if (money >= price) {
+    message1 = "決済完了"
+}
 
 // If Else: 
 let message2 = ""
