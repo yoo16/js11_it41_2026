@@ -94,6 +94,16 @@ function showStep(n) {
         // 1. step が n と等しい(今の画面) の時に "bg-sky-600 text-white"
         // 2. step が n より小さい(終わった画面) の時に "bg-sky-100 text-sky-700"
         // 3. それ以外(これからの画面) の時に "bg-slate-100 text-slate-400"
+        switch (true) {
+            case step === n:                     // 今の画面
+                cls += "bg-sky-600 text-white";
+                break;
+            case step < n:                      // 終わった画面
+                cls += "bg-sky-100 text-sky-700";
+                break;
+            default:                          // これからの画面
+                cls += "bg-slate-100 text-slate-400";
+        }
 
         dot.className = cls;
     });
