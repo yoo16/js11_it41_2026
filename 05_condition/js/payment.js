@@ -122,7 +122,11 @@ function chooseBag(flag) {
     // 1. useBag が true の時に `レジ袋を追加しました。（+${yen(BAG_PRICE)}）`
     // 2. それ以外 の時に "レジ袋は使いません。"
     // showStatus(メッセージ) で表示
-
+    if (useBag) {
+        showStatus(`レジ袋を追加しました。（+${yen(BAG_PRICE)}）`);
+    } else {
+        showStatus("レジ袋は使いません。");
+    }
 }
 
 // ===========================
