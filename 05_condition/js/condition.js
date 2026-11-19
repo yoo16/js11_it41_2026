@@ -32,6 +32,14 @@ let message2 = ""
 // 1. price が 0 未満 の時に "価格エラー"
 // 2. money が price 以上 の時に "決済完了"
 // 3. それ以外 の時に "残高不足"
+if (price < 0) {
+    message2 = "価格エラー";
+} else if (money >= price) {
+    message2 = "決済完了";
+} else {
+    message2 = "残高不足";
+}
+
 
 // switchゴミ曜日
 // 曜日インデックス（0:日 1:月 2:火 3:水 4:木 5:金 6:土）
