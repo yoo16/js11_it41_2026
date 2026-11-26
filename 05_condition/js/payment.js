@@ -268,9 +268,14 @@ function completePayment() {
     // TODO: 現金決済の場合、所持金から引く
     // 1. money -= getTotal()
     // 2. updateWallet() を実行
+    if (selectedMethod === "cash") {
+        money -= getTotal();
+        updateWallet();
+    }
 
     // TODO: 決済完了ファンファーレ再生
     // isAudioPlay=true の時: audioFanfare.play()
+    if (isAudioPlay) audioFanfare.play();
 
     // TODO: ポイントカードを読み取っていれば、ポイントを付与
     // 1. hasPointCard が true の時
@@ -278,6 +283,12 @@ function completePayment() {
     //    resultDisplay.textContent = `${point} ポイント付与しました。`
     // 2. それ以外 の時
     //    resultDisplay.textContent = "ポイントカードは使用されませんでした。"
+    if (hasPointCard) {
+        const point = Math.floor(getTotal() * POINT_RATE);
+        resultDisplay.textContent = `${point} ポイント付与しました。`;
+    } else {
+        resultDisplay.textContent = "ポイントカードは使用されませんでした。";
+    }
 
     // 決済完了メッセージ表示
     payButton.disabled = false;
