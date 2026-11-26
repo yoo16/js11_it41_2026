@@ -171,10 +171,10 @@ function selectMethod(methodKey) {
     // 1. 現金(cash) の時に cashArea を表示
     // 2. QR決済(qr) の時に showQrCode() を実行し、qrArea を表示
     // 3. 他の決済方法の時は特に表示なし
-    if (false) {
+    if (methodKey === "cash") {
         // 現金: 入金エリアを表示
         cashArea.classList.remove("hidden");
-    } else if (false) {
+    } else if (methodKey === "qr") {
         // QR決済: QRコードを表示
         showQrCode();
         qrArea.classList.remove("hidden");
@@ -218,7 +218,10 @@ function showQrCode() {
 function goToConfirm() {
     // TODO: 決済方法選択チェック
     // selectedMethod が空(false) : "決済方法を選択してください。" を表示して return
-    showStatus("決済方法を選択してください。");
+    if (!selectedMethod) {
+        showStatus("決済方法を選択してください。");
+        return;
+    }
 
     // TODO: 現金だけ残高チェック
     // selectedMethod が cash かつ money < getTotal()
