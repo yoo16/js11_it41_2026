@@ -258,6 +258,7 @@ function handlePayment() {
     showStatus("決済処理中です...");
     // TODO: ビープ音再生: if (isAudioPlay)
     // isAudioPlay=true の時: audioBeep.play()
+    if (isAudioPlay) audioBeep.play();
 
     // 疑似処理待機: setTimeout() で 1.8 秒後に completePayment() を実行
     setTimeout(() => completePayment(), 1800);
